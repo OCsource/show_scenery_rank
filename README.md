@@ -14,21 +14,21 @@ UI：界面展示
 
 logs：存放错误日记
 
-utils：存放一些工具
+utils：存放工具的地方
 
 ---
 **技术栈**
 ---
 
-python(python3.7 x64)：有python的一定基础，https://www.runoob.com/python/python-tutorial.html
+python(python3.7 x64)：有python的一定基础，https://www.runoob.com/python/python-tutorial.html（里面有用到线程，可以学习https://www.cnblogs.com/tkqasn/p/5700281.html）
 
-PyQt5：用于显示客户端界面，http://code.py40.com/pyqt5/
+PyQt5：用于显示客户端界面，可以学习http://code.py40.com/pyqt5/
 
-snownlp：https://www.cnblogs.com/zhiyong-ITNote/p/6938931.html
+snownlp：可以学习https://www.cnblogs.com/zhiyong-ITNote/p/6938931.html
 
-pylab：https://www.cnblogs.com/coser/archive/2013/06/20/3146022.html
+pylab：可以学习https://www.cnblogs.com/coser/archive/2013/06/20/3146022.html
 
-pymysql：https://www.runoob.com/python3/python3-mysql.html
+pymysql：可以学习https://www.runoob.com/python3/python3-mysql.html
 
 ---
 **包的层次结构**

@@ -7,7 +7,6 @@ operate = DB.operateDB()
 def calAffection():
     result = operate.searchSceneryNum()
     AHP = [91, 61, 61, 37, 98]      # 调查问卷数据
-    j = 0
     for r in result:
         tempList = []               #存取所有指标
         scenery_number = r[0]

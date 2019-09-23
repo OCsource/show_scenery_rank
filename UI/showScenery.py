@@ -139,7 +139,7 @@ class Ui_MainWindow(object):
     def inputData(self,scenery_name,num):
         self.tableWidget.clearContents()
         if scenery_name == '':
-            results = operate.getAllSceneryMsgs()
+            results = operate.searchScenery(scenery_name,num)
         else:
             results = operate.searchScenery(scenery_name,num)
         i = 0

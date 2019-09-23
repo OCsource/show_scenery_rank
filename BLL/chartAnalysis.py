@@ -46,7 +46,7 @@ class getThread(threading.Thread):
     def getSearch(self,scenery_name):
         senti_score1 = []
         senti_score2 = []
-        result_0 = operate.getAllscenery(scenery_name)
+        result_0 = operate.searchAllScenery(scenery_name)
         name_list = []
         for rows in result_0:
             result_1 = operate.searchComment(rows[0])
@@ -81,7 +81,7 @@ class getThread(threading.Thread):
             x = name_list
             pl.close()
             pl.mpl.rcParams['font.sans-serif'] = ['SimHei']
-            if num < 5:
+            if num < 9:
                 pl.plot(x, senti_score1, marker='o', label=u'评论分析')
                 pl.plot(x, senti_score2, marker='*', label=u'建议分析')
             else:
