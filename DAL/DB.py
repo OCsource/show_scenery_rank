@@ -4,7 +4,7 @@ from show_scenery_rank.utils import logUtil
 class operateDB():
     # 初始化,构造函数
     def __init__(self):
-        self.__dbName = 'qunarnew'
+        self.__dbName = 'qunar'
         self.__user = 'root'
         self.__password = '123456'
         self.__host = 'localhost'
