@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'analyzeUI.ui'
-#
-# Created by: PyQt5 UI code generator 5.11.3
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtWidgets
 from show_scenery_rank.DAL import DB
 from show_scenery_rank.BLL import chartAnalysis,saveWeight
@@ -139,7 +131,7 @@ class Ui_MainWindow(object):
         try:
             scenery_name = self.tableWidget.item(id, 2).text()
             scenery_number = self.tableWidget.item(id, 1).text()
-            chartAnalysis.analyzeMsg(scenery_name,scenery_number)
+            chartAnalysis.getThread(scenery_name,scenery_number).start()
         except:
             print('ERROR')
 
@@ -230,7 +222,7 @@ class Ui_MainWindow(object):
     def paintall(self, MainWindow):
         try:
             scenery_name = self.lineEdit_2.text()
-            chartAnalysis.getSearch(scenery_name)
+            chartAnalysis.getThread(scenery_name,'').start()
         except:
             print("ERROR")
 

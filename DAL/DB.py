@@ -190,7 +190,7 @@ class operateDB():
     def searchSceneryNum(self):
         db = pymysql.connect(self.__host, self.__user, self.__password, self.__dbName, charset=self.__char)
         cs = db.cursor()
-        sql = "SELECT scenery_number, grade FROM scenery_table WHERE count != 0 ;"
+        sql = "select scenery_name, grade from scenery_table where scenery_number in (select scenery_number from comment_table GROUP BY scenery_number);"
         try:
             cs.execute(sql)
             result = cs.fetchall()
